@@ -1,1 +1,4 @@
-uvicorn main:app --reload
+### Запуск ИИ без головной боли
+- `python -m build.py` — Обучение ИИ *(необязательно)*
+- `uvicorn main:app --reload` — Запуск сервера  
+###### Конфигурация настраивается в settings.py
