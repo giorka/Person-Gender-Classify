@@ -18,7 +18,7 @@ app: FastAPI = FastAPI()
 
 @app.post('/')
 async def on_file(file: UploadFile = File(...)) -> dict:
-    file_name: str = 'image-{uuid}.jpg'.format(uuid=uuid4())
+    file_name: str = 'image-{uuid}.jpg'.format(uuid=uuid4())  # TODO: reduce size
     content: bytes = await file.read()
 
     if not content:
